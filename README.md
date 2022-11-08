@@ -1,2 +1,2 @@
 # C_course
-learning c
+Will use this repo to upload my exercises trought C course
