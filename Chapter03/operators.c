@@ -1,6 +1,8 @@
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/types.h>
 
 int main()
 {
@@ -68,6 +70,7 @@ int main()
 
     // Venn Diagrams - Set theory
 
+    /*
     printf("Truth Table\n");
     printf("------------------------------------\n");
     printf("| x | y | x AND y | x OR y | NOT x |\n");
@@ -95,5 +98,82 @@ int main()
 
     printf("| %d | %d |%5d    |%5d   |%4d   |\n", x, y, x && y, x | y, !x);
 
+    */
+
+    // Bitwise operations
+
+    /**
+     * type: uint8_t
+     *
+     * A = 12 --> 000 1100
+     * B =  5 --> 000 0101
+     *
+     * A & B --> 000 0101 = 4
+     * A | B --> 000 1101 = 13
+     * A << 1 --> 0001 1000 = 24
+     * A >> 1 ---> 0000 0110 = 6
+     */
+
+    /*
+    uint8_t a = 12;
+    uint8_t b = 5;
+
+    printf("A = %u\n", a);
+    printf("B = %u\n", b);
+
+    printf("A & B = %u\n", a & b);
+    printf("A | B = %u\n", a | b);
+    printf("A ^ B = %u\n", a ^ b);
+    printf("A << 1 = %u\n", a << 1U);
+    printf("A >> 1 = %u\n", a >> 1U);
+
+    //Bitwise operators
+    */
+
+    // Asingments operators
+
+    /*
+    int a = 0;
+    int b = 3;
+    printf("b = %d\n", b);
+    a = b;
+    printf("a = b --> a = %d\n", a);
+    a += b;
+
+    printf("a += b --> a = %d\n", a);
+
+    a -= b;
+    printf("a -= b --> a = %d\n", a);
+
+    a *= b;
+    printf("a *= b --> a = %d\n", a);
+
+    a /= b;
+    printf("a /= b --> a = %d\n", a);
+
+    a %= b;
+
+    printf("a %%= b --> a = %d\n", a);
     return EXIT_SUCCESS;
+    */
+
+    /*
+    int variable = 0;
+    printf("%lu\n", sizeof(variable));
+    printf("%lu\n", sizeof(int));
+    printf("%lu\n", sizeof(long int));
+    printf("%llu\n", sizeof(long long int));
+    printf("%llu\n", sizeof(char));
+    printf("%llu\n", sizeof(int16_t));
+    printf("%llu\n", sizeof(int32_t));
+    printf("%llu\n", sizeof(int64_t));
+    printf("%llu\n", sizeof(123 && 456));
+    printf("%llu\n", sizeof(123LL && 456LL));
+    */
+
+    u_int8_t x = 10; // 0000    1010
+    u_int8_t y = 5;  // 0000    0101
+
+    u_int8_t z = x | y;
+    printf("%d\n", z); // 0000    1111
 }
