@@ -1,0 +1,15 @@
+*
+!*.c
+!Makefile_template
+!Introduction
+!DataTypesAndVariables
+!Operators
+!ControlFlow
+!Functions
+!Makefile
+!Pointers
+!.clang-format
+!skelet_creation.sh
+!boilerplate
+.vscode
+!.gitignore
